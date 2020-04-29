@@ -36,16 +36,18 @@ int diagon(int n,int m)
         row->insert(row->begin(), *(row->begin())+1);
         rowp = *row;
     }
-    cout << endl;
 
-
+    int sum=0;
     for (row = a.begin(); row != a.end(); row++){
         for (col = row->begin(); col != row->end(); col++)
+        {
             cout <<setw(3)<< *col<< "  ";
+            sum+=*col;
+        }
         cout << endl;
     }
 
-    return 0;
+    return sum;
 }
 int ulitka(int n, int m)
 {
@@ -55,12 +57,12 @@ int ulitka(int n, int m)
     vector <int>::iterator col;
     vector <int>::reverse_iterator recol;
 
-
-// улитка
     int num = 0 , k = 0;
     row = a.begin();
+    int deb=0;
     col = row->begin();
     while (num <= n*m) {
+        deb+=(num+1);
         for (col = (a.begin()+k)->begin()+k; col != (a.begin()+k)->end()-k; col++){
             num++;
             *col = num;
@@ -90,7 +92,8 @@ int ulitka(int n, int m)
             cout <<setw(3)<< *col<< "  ";
         cout << endl;
     }
-    return 0;
+    cout << endl;
+    return deb;
 }
 int main() {
     int n, m;
