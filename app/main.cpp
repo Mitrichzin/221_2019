@@ -59,7 +59,7 @@ int main()
             << "."
             << PROJECT_VERSION_TWEAK
             << std::endl;
-  std::system("cat ../LICENSE");  
-  cout<<multremoval("../app/in1.txt");
+  std::system("cat ./LICENSE");  
+  cout<<multremoval("./app/in1.txt");
   return 0;
 }
