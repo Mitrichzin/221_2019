@@ -17,7 +17,6 @@ using namespace std;
 
 string multremoval(const char* file)
 {
-    setlocale(LC_ALL, "Russian");
     freopen(file, "r", stdin);
     int n, t, c;
 	vector<int> v;
@@ -40,7 +39,6 @@ string multremoval(const char* file)
                     c--;
                 }
 	}
-	string str2="";
     for (it=v.begin();it!=v.end();it++)
     {
         str+=to_string(*it);
