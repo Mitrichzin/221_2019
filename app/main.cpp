@@ -19,6 +19,17 @@ int diagon(int n,int m);
 int ulitka(int n, int m);
 
 int main() {
+    std::cout << "C++ Boiler Plate v"
+            << PROJECT_VERSION_MAJOR
+            << "."
+            << PROJECT_VERSION_MINOR
+            << "."
+            << PROJECT_VERSION_PATCH
+            << "."
+            << PROJECT_VERSION_TWEAK
+            << std::endl;
+    std::system("cat ../LICENSE");
+    cout<< std::endl;
     int n, m;
     freopen("./in1.txt", "r", stdin);
     cin >> n >> m;
