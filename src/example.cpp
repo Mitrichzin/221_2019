@@ -6,7 +6,7 @@
 #include <stdlib.h>
 #include <fstream>
 #include <cstdio>
-string multremoval(const char* file*)
+string multremoval(const char* file)
 {
     setlocale(LC_ALL, "Russian");
     freopen(file, "r", stdin);
