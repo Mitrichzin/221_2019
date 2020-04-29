@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <fstream>
 #include <cstdio>
-#include <cstring>
+#include <string>
 string multremoval(const char* file)
 {
     freopen(file, "r", stdin);
