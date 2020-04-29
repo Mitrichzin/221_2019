@@ -1,5 +1,11 @@
 #include "example.h"
-
+#include <string>
+#include <iostream>
+#include <vector>
+#include <iostream>
+#include <stdlib.h>
+#include <fstream>
+#include <cstdio>
 string multremoval(const char* file*)
 {
     setlocale(LC_ALL, "Russian");
