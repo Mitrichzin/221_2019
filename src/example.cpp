@@ -100,7 +100,7 @@ string ulitka(int n, int m)
 #include "doctest.h"
 TEST_CASE("we can have tests written here, to test impl. details")
 {
-    str1="1 23 37 "
+    string str1="1 23 37 "
     //str2="1    2    3    4    5    6    7    8    2    1    2    3    4    5    6    7    3    2    1    2    3    4    5    6"
     CHECK(ulitka(6,7)==str1);
     //CHECK(diagon(3,8)==str2)
