@@ -15,7 +15,7 @@
 #include <string>
 using namespace std;
 
-string multremoval(const char* file*)
+string multremoval(const char* file)
 {
     setlocale(LC_ALL, "Russian");
     freopen(file, "r", stdin);
