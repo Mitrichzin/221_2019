@@ -1,21 +1,19 @@
 #include "example.h"
-#include <string>
 #include <iostream>
 #include <vector>
 #include <iostream>
 #include <stdlib.h>
 #include <fstream>
 #include <cstdio>
+#include <cstring>
 string multremoval(const char* file)
 {
-    setlocale(LC_ALL, "Russian");
     freopen(file, "r", stdin);
     int n, t, c;
 	vector<int> v;
 	vector<int>:: iterator it;
 	vector<int>:: reverse_iterator rit;
 	string str="";
-	//cout << "??????? ?????????? ?????????" << endl;
 	cin >> n;
 	for (int i = 0; i<n; i++){
         cin >>t;
@@ -32,7 +30,6 @@ string multremoval(const char* file)
                     c--;
                 }
 	}
-	string str2="";
     for (it=v.begin();it!=v.end();it++)
     {
         str+=to_string(*it);
