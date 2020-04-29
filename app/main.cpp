@@ -31,7 +31,7 @@ int main() {
     std::system("cat ../LICENSE");
     cout<< std::endl;
     int n, m;
-    freopen(""../app/in1.txt"", "r", stdin);
+    freopen("../app/in1.txt", "r", stdin);
     cin >> n >> m;
     ulitka(n,m);
     diagon(n,m);
