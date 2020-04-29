@@ -40,6 +40,6 @@ string multremoval(const char* file*)
 TEST_CASE("we can have tests written here, to test impl. details")
 {
     string str1="5 6 7 8 9 0 0 0 0 0 ";
-    CHECK(multremoval("../app/in2.txt")==str1);
+    CHECK(multremoval("./app/in2.txt")==str1);
 }
 #endif
