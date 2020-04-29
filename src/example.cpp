@@ -35,18 +35,20 @@ int diagon(int n,int m)
         row->insert(row->begin(), *(row->begin())+1);
         rowp = *row;
     }
-    cout << endl;
 
-
+    int sum=0;
     for (row = a.begin(); row != a.end(); row++){
         for (col = row->begin(); col != row->end(); col++)
+        {
             cout <<setw(3)<< *col<< "  ";
+            sum+=*col;
+        }
         cout << endl;
     }
 
-    return 0;
+    return sum;
 }
-string ulitka(int n, int m)
+int ulitka(int n, int m)
 {
     vector <vector<int> > a(n, vector<int>(m, 0));
     vector < vector<int> >::iterator row;
@@ -54,14 +56,12 @@ string ulitka(int n, int m)
     vector <int>::iterator col;
     vector <int>::reverse_iterator recol;
 
-
-    string str="";
     int num = 0 , k = 0;
     row = a.begin();
+    int deb=0;
     col = row->begin();
     while (num <= n*m) {
-        str+=to_string(num+1);
-        str+=" ";
+        deb+=(num+1);
         for (col = (a.begin()+k)->begin()+k; col != (a.begin()+k)->end()-k; col++){
             num++;
             *col = num;
@@ -91,8 +91,10 @@ string ulitka(int n, int m)
             cout <<setw(3)<< *col<< "  ";
         cout << endl;
     }
-    return str;
+    cout << endl;
+    return deb;
 }
+
 
 
 
@@ -100,9 +102,9 @@ string ulitka(int n, int m)
 #include "doctest.h"
 TEST_CASE("we can have tests written here, to test impl. details")
 {
-    string str1="1 23 37 "
-    //str2="1    2    3    4    5    6    7    8    2    1    2    3    4    5    6    7    3    2    1    2    3    4    5    6"
-    CHECK(ulitka(6,7)==str1);
-    //CHECK(diagon(3,8)==str2)
+    int t1=61;
+    int t2=92
+    CHECK(ulitka(6,7)==t1);
+    CHECK(diagon(3,8)==t2)
 }
 #endif
