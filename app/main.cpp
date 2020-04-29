@@ -15,8 +15,8 @@
 #include <iomanip>
 
 using namespace std;
-int diagon(int n,int m)
-int ulitka(int n, int m)
+int diagon(int n,int m);
+int ulitka(int n, int m);
 
 int main() {
     int n, m;
