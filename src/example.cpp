@@ -105,6 +105,6 @@ TEST_CASE("we can have tests written here, to test impl. details")
     int t1=61;
     int t2=92;
     CHECK(ulitka(6,7)==t1);
-    CHECK(diagon(3,8)==t2)
+    CHECK(diagon(3,8)==t2);
 }
 #endif
