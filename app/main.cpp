@@ -17,7 +17,7 @@
 using namespace std;
 int main() {
     int n, m;
-    freopen("./in1.txt", "r", stdin)
+    freopen("./in1.txt", "r", stdin);
     cin >> n >> m;
     vector <vector<int> > a(n, vector<int>(m, 0));
     vector < vector<int> >::iterator row;
