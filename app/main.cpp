@@ -11,7 +11,11 @@
 
 #include "exampleConfig.h"
 #include "example.h"
+#include <iostream>
+#include <set>
+#include <vector>
 
+using namespace std;
 /*
  * Simple main program that demontrates how access
  * CMake definitions (here the version number) from source code.
@@ -28,8 +32,19 @@ int main() {
             << std::endl;
   std::system("cat ../LICENSE");
 
-  // Bring in the dummy class from the example source,
-  // just to show that it is accessible from main.cpp.
-  Dummy d = Dummy();
-  return d.doSomething() ? 0 : -1;
+    int n, t;
+    set<int> a;
+    vector<string> s;
+    vector<string> :: iterator it;
+    cin >> n;
+    for (int i = 0; i  < n; i++){
+        cin >> t;
+        if (a.count(t))
+            s.push_back("YES"); else
+                s.push_back("NO");
+        a.insert(t);
+    }
+    for (it = s.begin(); it != s.end(); it++)
+        cout << *it << " ";
+}
 }
