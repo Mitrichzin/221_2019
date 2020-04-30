@@ -1,5 +1,9 @@
 #pragma once
-
+#include <iostream>
+#include <list>
+#include <algorithm>
+#include <stdio.h>
+#include<string>
 /**
  * This is a dummy class to demonstrate features of the boiler plate.
  */
