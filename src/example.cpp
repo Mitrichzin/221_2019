@@ -34,7 +34,7 @@ string multremoval(const char* file)
     }
 	for (it = v.begin(); it != v.end(); it++){
         t = *it;
-        c = count(it, v.end(), t);
+        c = int(count(it, v.end(), t));
         if (c-1)
             for (rit = v.rbegin(); rit != v.rend(); rit++)
                 if ((c-1) && (*rit == t)) {
@@ -57,6 +57,5 @@ TEST_CASE("we can have tests written here, to test impl. details")
 {
     std::string str1="5 6 7 8 9 0 0 0 0 0 ";
     CHECK(multremoval("../app/in2.txt")==str1);
-    CHECK(multremoval("../app/in2.txt")=="");
 }
 #endif
