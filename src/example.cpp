@@ -133,6 +133,7 @@ bool Dummy::doSomething() {
 #include "doctest.h"
 TEST_CASE("we can have tests written here, to test impl. details")
 {
-    CHECK(true);
+    CHECK(printl(listwork("../app/in1.txt"))=="2 3 4 5 7 8 9 ");
+    CHECK(max(listwork("../app/in1.txt"))==7);
 }
 #endif
