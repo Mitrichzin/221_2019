@@ -6,6 +6,7 @@
 #include <fstream>
 #include <cstdio>
 #include <string>
+#include <algorithm>
 using namespace std;
 string multremoval(const char* file)
 {
