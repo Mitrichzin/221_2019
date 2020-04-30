@@ -6,7 +6,8 @@
 #include <fstream>
 #include <cstdio>
 #include <string>
-std::string multremoval(const char* file)
+using namespace std;
+string multremoval(const char* file)
 {
     freopen(file, "r", stdin);
     int n, t, c;
