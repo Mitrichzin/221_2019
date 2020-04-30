@@ -2,8 +2,9 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-Dummy::Dummy() {
 using namespace std;
+Dummy::Dummy() {
+
 }
 void print(pair<float, pair<int, int> > a )
 {
@@ -40,6 +41,15 @@ bool Dummy::doSomething() {
 #include "doctest.h"
 TEST_CASE("we can have tests written here, to test impl. details")
 {
-    CHECK(true);
+   	vector< pair<float, pair<int, int> > > v;
+	v.push_back(make_pair(2,make_pair(-1,-1)));
+	v.push_back(make_pair(500,make_pair(10,20)));
+	v.push_back(make_pair(1300,make_pair(30,20)));
+	v.push_back(make_pair(2300,make_pair(30,40)));
+	v.push_back(make_pair(2,make_pair(50,60)));
+	v.push_back(make_pair(2,make_pair(50,60)));
+	v.push_back(make_pair(2,make_pair(80,70)));
+	v.push_back(make_pair(2,make_pair(95,95)));
+	CHECK(v==sortdots("../app/in1.txt");
 }
 #endif
