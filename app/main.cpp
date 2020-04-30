@@ -5,17 +5,20 @@
 #define DOCTEST_CONFIG_IMPLEMENT
 #include "doctest.h"
 #endif
-
 #include <iostream>
 #include <stdlib.h>
-
 #include "exampleConfig.h"
 #include "example.h"
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
 
-/*
- * Simple main program that demontrates how access
- * CMake definitions (here the version number) from source code.
- */
+using namespace std;
+bool cmp(const char a, const char b);
+vector <string> split(string s);
+string uniq(vector <string> v);
+string samelit(vector <string> v);
 int main() {
   std::cout << "C++ Boiler Plate v"
             << PROJECT_VERSION_MAJOR
@@ -26,10 +29,20 @@ int main() {
             << "."
             << PROJECT_VERSION_TWEAK
             << std::endl;
-  std::system("cat ../LICENSE");
-
-  // Bring in the dummy class from the example source,
-  // just to show that it is accessible from main.cpp.
-  Dummy d = Dummy();
-  return d.doSomething() ? 0 : -1;
+    std::system("cat ../LICENSE");
+    freopen("../app/in1.txt", "r", stdin);
+    ios::sync_with_stdio(false);
+    string s;
+    vector <string> v;
+    getline(cin, s);
+    s.push_back(' ');
+    cout <<"1)";
+    v = split(s);
+    cout <<"2)";
+    cout<<uniq(v);
+    cout << endl;
+    cout <<"3)";
+    cout<<samelit(v);
+    cout <<endl;
+    return 0;
 }
