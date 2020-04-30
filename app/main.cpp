@@ -9,6 +9,12 @@
 #include <stdlib.h>
 #include "exampleConfig.h"
 #include "example.h"
+#include "example.h"
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <utility> 
+using namespace std;
 
 int main() {
   std::cout << "C++ Boiler Plate v"
