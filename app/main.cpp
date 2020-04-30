@@ -5,17 +5,11 @@
 #define DOCTEST_CONFIG_IMPLEMENT
 #include "doctest.h"
 #endif
-
 #include <iostream>
 #include <stdlib.h>
-
 #include "exampleConfig.h"
 #include "example.h"
 
-/*
- * Simple main program that demontrates how access
- * CMake definitions (here the version number) from source code.
- */
 int main() {
   std::cout << "C++ Boiler Plate v"
             << PROJECT_VERSION_MAJOR
@@ -28,8 +22,10 @@ int main() {
             << std::endl;
   std::system("cat ../LICENSE");
 
-  // Bring in the dummy class from the example source,
-  // just to show that it is accessible from main.cpp.
-  Dummy d = Dummy();
-  return d.doSomething() ? 0 : -1;
+  vector< pair<float, pair<int, int> > > A=sortdots("CON");
+    vector< pair<float, pair<int, int> > >::iterator it;
+    cout <<"Точки в порядке возрастания расстояний:"<< endl;
+    for (it = A.begin(); it != A.end(); it++)
+        print(*it);
+	return 0;
 }
