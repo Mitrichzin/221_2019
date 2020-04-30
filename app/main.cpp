@@ -31,7 +31,6 @@ int main() {
   vector< pair<float, pair<int, int> > > A=sortdots("CON");
     vector< pair<float, pair<int, int> > >::iterator it;
     cout <<"Точки в порядке возрастания расстояний:"<< endl;
-    for (it = A.begin(); it != A.end(); it++)
-        print(*it);
-	return 0;
+    for(it = A.begin(); it != A.end(); it++) print(*it);
+return 0;
 }
