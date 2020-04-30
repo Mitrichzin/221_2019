@@ -13,6 +13,9 @@ bool Dummy::doSomething() {
     auto [zero, one] = digits;
     return zero + one;
 }
+bool cmp(const char a, const char b){
+    return ( (a == b) && (a == ' '));
+}
 vector <string> split(string s)
 {
     string :: iterator sit = unique(s.begin(), s.end(), cmp);
