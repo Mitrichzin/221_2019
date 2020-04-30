@@ -4,6 +4,7 @@
 #include <algorithm>
 #include <stdio.h>
 #include<string>
+#include<cstdlib>
 using namespace std;
 /**
  * This is a dummy class to demonstrate features of the boiler plate.
