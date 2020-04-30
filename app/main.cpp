@@ -32,19 +32,18 @@ int main() {
             << std::endl;
   std::system("cat ../LICENSE");
 
-    int n, t;
-    set<int> a;
-    vector<string> s;
-    vector<string> :: iterator it;
+    int n;
+    string s1,s2;
+    map <string,string> d1,d2;
     cin >> n;
-    for (int i = 0; i  < n; i++){
-        cin >> t;
-        if (a.count(t))
-            s.push_back("YES"); else
-                s.push_back("NO");
-        a.insert(t);
+    for (int i = 0; i < n; ++i){
+        cin >> s1 >> s2;
+        d1.insert(pair <string,string> (s1,s2));
+        d2.insert(pair <string,string> (s2,s1));
     }
-    for (it = s.begin(); it != s.end(); it++)
-        cout << *it << " ";
-}
+    cin >> s1;
+    if (d1.count(s1))
+        cout << d1[s1];
+        else
+            cout << d2[s1];
 }
