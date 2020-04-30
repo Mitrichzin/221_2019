@@ -24,7 +24,7 @@ class Dummy {
 #include <fstream>
 #include <cstdio>
 #include <string>
-string multremoval(const char* file);
+std::string multremoval(const char* file);
 
 #ifdef ENABLE_DOCTEST_IN_LIBRARY
 #include "doctest.h"
