@@ -21,6 +21,16 @@ string printl(list<int> l)
     }
     return str;
 }
+int max(list<int> l)
+{
+	int k=1;
+	list<int>::iterator it = l.begin();
+    while (it != max_element(l.begin(), l.end())){
+        it++;
+        k++;
+    };
+    return(k);
+}
 list<int> listwork( const char* input) 
 {
     freopen(input, "r", stdin);
@@ -88,12 +98,7 @@ list<int> listwork( const char* input)
                     l.erase(it);
                 break;
             case 8:
-                k++;
-                while (it != max_element(l.begin(), l.end())){
-                    it++;
-                    k++;
-                };
-                cout << "Максимальный элемент списка имеет значение " << *it << " и позицию "<< k;
+                cout << "Максимальный элемент списка имеет позицию "<< max(l);
                 cout <<"\n";
                // getchar();
                 //getchar();
