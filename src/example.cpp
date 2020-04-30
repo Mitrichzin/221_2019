@@ -73,7 +73,7 @@ TEST_CASE("we can have tests written here, to test impl. details")
     s.push_back(' ');
     v=split(s);
     CHECK(v[1]=="yuuu");
-    CHECK(uniq(v)=="qwq yuuu iiiii tststs sweet");
-    CHECK(samelit(v)=="qwq iiiii oooaaao");
+    CHECK(uniq(v)=="qwq yuuu iiiii tststs sweet ");
+    CHECK(samelit(v)=="qwq iiiii oooaaao ");
 }
 #endif
