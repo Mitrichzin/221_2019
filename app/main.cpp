@@ -28,6 +28,6 @@ int main() {
             << std::endl;
   std::system("cat ../LICENSE");
   list<int> list1;
-	list1=listwork("CON");
+	list1=listwork("./in1.txt");
   return 0;
 }
