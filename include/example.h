@@ -16,7 +16,15 @@ class Dummy {
    */
   bool doSomething();
 };
-
+#include "example.h"
+#include <iostream>
+#include <vector>
+#include <iostream>
+#include <stdlib.h>
+#include <fstream>
+#include <cstdio>
+#include <string>
+string multremoval(const char* file);
 
 #ifdef ENABLE_DOCTEST_IN_LIBRARY
 #include "doctest.h"
