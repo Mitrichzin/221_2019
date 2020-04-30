@@ -6,7 +6,7 @@
 Dummy::Dummy() {
 
 }
-
+using namespace std;
 bool Dummy::doSomething() {
     // Do silly things, using some C++17 features to enforce C++17 builds only.
     constexpr int digits[2] = {0, 1};
@@ -64,6 +64,13 @@ string samelit(vector <string> v)
 TEST_CASE("we can have tests written here, to test impl. details")
 {
     freopen("../app/in1.txt", "r", stdin);
-    CHECK(true);
+    string s;
+    vector <string> v;
+    getline(cin, s);
+    s.push_back(' ');
+    v=split(s);
+    CHECK(v[1]=="yuuu");
+    CHECK(uniq(v)=="qwq yuuu iiiii tststs sweet");
+    CHECK(samelit(v)=="qwq iiiii oooaaao");
 }
 #endif
