@@ -50,6 +50,6 @@ TEST_CASE("we can have tests written here, to test impl. details")
 	v.push_back(make_pair(6100,make_pair(50,60)));
 	v.push_back(make_pair(11300,make_pair(80,70)));
 	v.push_back(make_pair(18050,make_pair(95,95)));
-	CHECK(v==sortdots("../app/in1.txt");
+	CHECK(v==sortdots("../app/in1.txt"));
 }
 #endif
