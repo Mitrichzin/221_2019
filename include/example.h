@@ -16,8 +16,9 @@ class Dummy {
    */
   bool doSomething();
 };
-
-
+void printc();
+string printl(list<int> l);
+list<int> listwork( const char* input);
 #ifdef ENABLE_DOCTEST_IN_LIBRARY
 #include "doctest.h"
 TEST_CASE("we can have tests in headers if we want")
