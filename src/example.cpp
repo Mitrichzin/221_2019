@@ -12,11 +12,11 @@ void printc() {
 string printl(list<int> l)
 {
 	string str="";
-	char str2[30]; 
+	string str2; 
 	list<int>::iterator it = l.begin();
 	for (it = l.begin(); it != l.end(); it++)
     {
-		itoa(*it,str2,10);
+	str2=std::to_string(*it);
         (str+=str2)+=" ";
     }
     return str;
