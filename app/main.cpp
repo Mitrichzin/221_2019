@@ -27,9 +27,7 @@ int main() {
             << PROJECT_VERSION_TWEAK
             << std::endl;
   std::system("cat ../LICENSE");
-
-  // Bring in the dummy class from the example source,
-  // just to show that it is accessible from main.cpp.
-  Dummy d = Dummy();
-  return d.doSomething() ? 0 : -1;
+  list<int> list1;
+	list1=listwork("CON");
+  return 0;
 }
